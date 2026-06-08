@@ -1,0 +1,253 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+body { 
+  color: #555;
+  background:#fff;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.6;
+  font-size:75%;}
+  
+
+body.font-small { font-size:65%;}
+body.font-medium { font-size:75%;}  
+body.font-large { font-size:85%;}
+  
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 { 
+	color: #444;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight: normal; }
+	
+h1 { 
+	font-size: 3em;
+	margin-bottom: 0em;}
+	
+h2 { 
+	font-size: 2.5em; 
+	margin-bottom:0.5em; }
+	
+h3 { 
+	font-size: 2em; 
+	line-height: 1; 
+	margin-bottom: 1em; }
+	
+h4 { 
+	font-size: 1.5em; 
+	line-height: 1.25; 
+	margin-bottom:0.5em; }
+	
+h5 { 
+	font-size: 1.2em; 
+	font-weight: bold; 
+	margin-bottom: 1.5em; }
+	
+h6 { 
+	font-size: 1em; 
+	font-weight: bold;}
+
+
+/* General elements
+-------------------------------------------------------------- */
+p { margin: 0 0 1em;}
+	p.last { margin-bottom: 0!important}
+	p img { 
+		float: left; 
+		margin: 0 15px 10px 0; 
+		padding: 0}
+	
+img { margin: 0 0 15px}
+.reflectimg {
+   float: left;
+   margin: 20px;}
+
+div.captionimage { width:285px; margin-right:15px; float:left;}
+div#page div.captionimage { width:150px;}
+
+p.textcaption { color:#999; font-size:.9em; text-align: center; font-style: italic; text-indent: 0;}
+
+a:link { 
+	text-decoration: none; 
+	outline:none;
+	color:#0F5987}
+	a:visited { text-decoration:none; color:#551A8B}
+	a:hover{ text-decoration:underline}
+
+	
+strong { font-weight: bold}
+	
+em { font-style: italic; background: #ffc}
+
+.small { font-size: .9em; color:#999999; }
+	
+.large { font-size: 1.2em}
+
+.highlight  { background:#F8ECD3;}
+
+.line-through  { text-decoration:line-through; color:#888;}
+
+
+.dropcap { 
+	display: block; 
+	float:left; 
+	font: 5em/75% Georgia, "Times New Roman", Times, serif ;
+	padding: 4px 8px 0 0; }
+
+hr {
+	background:#E1E1D7; 
+	clear: both;
+	border:none; 
+  	float: none; 
+  	width: 100%; 
+  	height: 1px;
+	display:block;
+	overflow:hidden; }
+
+
+/* Lists 
+-------------------------------------------------------------- */
+
+/* Unordered and Ordered Lists */
+ul, ol { 
+	margin:.5em 1.5em 2em 1.5em}
+
+ul { 	list-style-type:disc;}
+	
+	ul.check, ul.arrow, ul.cross, ul.light, ul.star {
+		list-style: none; margin-left:0}
+		ul.check li, ul.arrow li, ul.cross li, ul.light li, ul.star li {
+			list-style-type:none;
+			background-repeat: no-repeat; background-position: center left;
+			padding: 4px 0 3px 25px}
+			
+			ul.check li { background-image:url(../images/typo_check.jpg);}
+			ul.arrow li { background-image:url(../images/typo_arrow.jpg);}
+			ul.cross li { background-image:url(../images/typo_cross.jpg);}
+			ul.light li { background-image:url(../images/typo_light.jpg);}
+			ul.star li {  background-image:url(../images/typo_star.jpg);}
+	
+	ul.check-big, ul.arrow-big, ul.cross-big, ul.light-big, ul.star-big {
+		list-style: none; margin-left:0}
+		ul.check-big li, ul.arrow-big li, ul.cross-big li, ul.light-big li, ul.star-big li {
+			list-style-type:none;
+			background-repeat: no-repeat; background-position: center left;
+			padding: 11px 0 8px 50px;
+			font-size:1.4em;
+			font-weight:bold;}
+			
+			ul.check-big li { background-image:url(../images/typo_check-big.jpg);}
+			ul.arrow-big li { background-image:url(../images/typo_arrow-big.jpg);}
+			ul.cross-big li { background-image:url(../images/typo_cross-big.jpg);}
+			ul.light-big li { background-image:url(../images/typo_light-big.jpg);}
+			ul.star-big li {  background-image:url(../images/typo_star-big.jpg);}
+			
+			
+			
+ol { list-style-type: decimal}
+	/* on the search results page */
+	ol.list li { margin-bottom:2em}
+	ol.list h4 { margin:0 0 .2em}
+
+/* Definiton Lists */	
+dl { margin: 0 0 1.5em 0}
+	dl dt { font-weight: bold}
+	dd { margin-left: 1.5em}
+
+
+/*Blockquotes*/
+blockquote  { 
+	margin: 1.5em 1.5em 2em; 
+	color: #666; 
+	font-style: italic;
+	background: transparent url(../images/quote_start.png) left top no-repeat;}
+	blockquote div {
+	  padding: 0 30px;
+	  background: transparent url(../images/quote_end.png) right bottom no-repeat;}
+
+
+/*Codes*/	  
+pre,code    { 
+	white-space: pre; 
+	background:#F9F9F9;
+	border: 1px solid #ccc;	
+	border-left: 10px solid #ccc;	
+	margin: .5em 0 1.5em;
+	padding: 20px;
+	font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; 
+	line-height: 1.7}
+	
+
+/* Tables
+-------------------------------------------------------------- */
+table   { margin-bottom: 1.4em; }
+th,td   { padding: 4px 10px 4px 0; }
+tfoot   { font-style: italic; }
+
+table.custom {
+	width:100%;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	margin:1em auto;
+	border-collapse:collapse;}
+		
+table.custom caption  {
+	color: #ccc;
+	font-size:1em;
+	letter-spacing:.1em;
+	margin:1em 0 0 0;
+	padding:0;
+	caption-side:top;
+	text-align:center;}	
+		
+table.custom tr.odd td	{
+	background:#F9F9F9}
+	
+table.custom tr.odd .column1	{
+	background:#F0F0F0;}
+		
+table.custom .column1 {
+	background:#F0F0F0;}
+	
+table.custom td {
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	padding:.5em 1.2em;
+	text-align:center;}	
+				
+table.custom th {
+	font-weight:normal;
+	text-align:left;
+	border-bottom: 1px solid #ccc;
+	border-left:1px solid #ccc;
+	padding:.3em 1em;}	
+							
+table.custom thead th {
+	background:#F0F0F0;
+	text-align:center;
+	font:bold 1.3em/2.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#555}	
+	
+table.custom tfoot th {
+	text-align:center;
+	background:#F0F0F0;}	
+	
+table.custom tfoot th strong {
+	font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;}		
+	
+table.custom tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: normal;}	
+	

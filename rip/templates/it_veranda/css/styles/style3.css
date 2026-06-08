@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+/* Forms */
+.round { color:#CFAAC3D; background-image:url(../../images/styles/style3/button.png);}
+.round a { color:#CFAAC3;}
+.round span { background-image:url(../../images/styles/style3/button.png)}
+
+/* Menus.css */
+#main-nav_wrap { background-color:#6E0D4F; background-image:url(../../images/styles/style3/nav.png)}
+ul#nav li a span.sub { color:#BD8AAD;}
+ul#nav  li#current a,
+ul#nav  li.active a { background-color:#5E0040; background-image:url(../../images/styles/style3/nav_hover.png); }
+ul#nav ul, 
+#MainMenuSub ul {background-color:#6D0E52; border-right-color:#803065}
+ul#nav ul li a, 
+#MainMenuSub ul li a {color:#BD8AAD; border-bottom-color:#85336A}
+#MainMenuSub li#current a { background-color:#933774}
+ul#nav  li#current a span,
+ul#nav  li.active a span {background-image:url(../../images/styles/style3/nav_current.png);}
+ul#nav li li a span.sub {color:#BD8AAD;}
+
+
+/* General.css */
+#header { background-image:url(../../images/styles/style3/header.png);}
+
+#fontswitcher { background-image:url(../../images/styles/style3/font_switcher.png)}
+
+#promo .moduletable h3 span,
+#left-column .icemodule h3 span.icemodule_header_color, 
+#right-column .icemodule h3 span.icemodule_header_color{ color:#6E2657}
+
+#content_gradient { background-image:url(../../images/styles/style3/content_gradient.png);}
+#content_top { background-image:url(../../images/styles/style3/content_top.png);}
+#content_bottom { background-image:url(../../images/styles/style3/content_bottom.png);}
+
+.readmore a {color:#6E2657;}
+
+#search_bg {background-image:url(../../images/styles/style3/search_bg.png);}
+#search_bg .button { color:#CFAAC3;}
+
+#loginarea { background-image:url(../../images/styles/style3/login.png);}	
+form.loginform p#login_button .round { background-image:url(../../images/styles/style3/login_button.png);}
+form.loginform p#login_button .round span {	background-image:url(../../images/styles/style3/login_button.png);}

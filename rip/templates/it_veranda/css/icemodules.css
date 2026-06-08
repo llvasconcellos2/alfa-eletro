@@ -1,0 +1,373 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+/* For the  IceSlideShow see modules/mod_ice_slideshow/css/general.css */
+
+
+
+/* IceAccordion 
+-------------------------------------------------------------------*/
+.iceaccordion { 
+	position:relative; 
+	overflow:hidden;
+	margin:0 0 -15px;} 
+
+	.iceaccordion h4.toggler {
+		border-bottom:1px solid #E1E1D7;
+		height:29px;
+		line-height:30px;
+		padding:0;
+		font-size:1em;
+		cursor: pointer;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		letter-spacing:0.05em;
+		text-transform:uppercase;
+		position:relative;
+		cursor: pointer;
+		background: url(../images/iceaccordion_closed.png) no-repeat right center !important;}
+	
+		.iceaccordion h4.open {
+			background-image: url(../images/iceaccordion_open.png)!important;}
+	
+	.iceaccordion div.accordion_content{
+	position: relative;
+	overflow: hidden;}
+
+		
+			
+/* IceSlider ImageSlide */
+.iceslider_imageslide .icemodule { position:relative; padding:0; margin:0;}
+.iceslider_imageslide .icemodule div div div { padding:0}
+.iceslider_imageslide .icemodule div div div div { margin: 0 auto; padding:3px 0 7px; overflow: hidden;}
+							
+	.iceslider_imageslide ul {
+		margin:-40px 12px 0;
+		float:right;
+		z-index:1;
+		position:relative;
+		width:122px;
+		height:27px;
+		text-align:center;
+		padding:5px 0 0 8px;
+		background:url(../images/icesldier_imageslide_arrowbg.png) no-repeat}
+		.iceslider_imageslide ul li{
+			list-style-type:none;
+			float:left;
+			width: 25px;
+			height: 18px;
+			cursor:pointer;
+			background:url(../images/icesldier_imageslide_buttons.png) no-repeat 0 0}
+			.iceslider_imageslide ul li.imageslide_prev { background-position:0 0}
+			.iceslider_imageslide ul li.imageslide_next { background-position:-25px 0 }
+			.iceslider_imageslide ul li.imageslide_stop { background-position:-50px 0}
+			.iceslider_imageslide ul li.imageslide_play { background-position:-75px 0}
+			
+		.iceslider_imageslide ul li span { /* Hide Text */
+			display: block;
+			width: 0;
+			height: 0;
+			overflow: hidden;}
+	
+	.iceslider_imageslide ol {
+		margin:0;
+		padding:0;
+		position:relative;
+		overflow:hidden;}
+			.iceslider_imageslide ol li{
+				list-style-type:none;
+				margin:0;
+				display:block;
+				float:left;
+				padding:0}
+
+.icesldier_imageslide_content {
+	position:relative;
+	width:546px;
+	height:230px;
+	overflow:hidden;}
+.iceslider_imageslide_box {
+	position:absolute}
+	
+	
+	
+
+/* IceSlider TabularSlide */
+.iceslider_tabularslide {
+	margin:20px 0 15px;}
+	
+.iceslider_tabularslide .controlarea {
+	background:#F7F6F2 url(../images/icesldier_tabularslide_gradient.png) repeat-x bottom;
+	height:35px;
+	line-height:35px;}
+	
+
+.iceslider_tabularslide ul.slidingul {
+	margin:0 0 0 5px;
+	float:left;}
+	
+	.iceslider_tabularslide ul.slidingul li {
+		float:left;
+		list-style-type:none;
+		cursor:pointer;
+		padding:0;
+		margin:0;
+		font-size:1.1em;
+		height:35px;
+		color:#888;
+		background:url(../images/icesldier_tabularslide_navsep.png) no-repeat center right}
+		
+		.iceslider_tabularslide ul.slidingul li span {
+		display: block;
+		height: 35px;
+		float: left; /* IE 6 Fix */
+		padding: 0 22px 0  20px;}
+		
+		.iceslider_tabularslide ul.slidingul li:hover {
+			color:#555}
+			
+		.iceslider_tabularslide ul.slidingul li.active { 
+			background: url(../images/icesldier_tabularslide_navright.png) bottom right no-repeat;
+			color:#555;
+			position:relative;
+			overflow:visible;
+			zoom:1;
+			height:48px;}
+			.iceslider_tabularslide ul.slidingul li.active span {
+				height:48px;
+				position:relative;
+				overflow:visible;
+				zoom:1;
+				margin-left:-1px;
+				padding-left:21px;
+				background: url(../images/icesldier_tabularslide_navleft.png) bottom left no-repeat;}
+		
+.iceslider_tabularslide_content {
+	position:relative;
+	overflow:hidden;
+	margin-bottom:20px;
+	clear:both;}
+		.iceslider_tabularslide_content div{
+			float:left;}
+		.iceslider_tabularslide_content div img{ position:relative; float:right;}
+		
+.iceslider_tabularslide_box {
+	position:absolute}	
+
+	.iceslider_tabularslide_content h3 { font-size:2em; line-height:1; margin-bottom:0.6em; color:#666}	
+
+
+.iceslider_tabularslide ul.slidingbuttons {
+	margin:12px 5px 0 0;
+	float:right;}
+	.iceslider_tabularslide ul.slidingbuttons li{
+		list-style-type:none;
+		cursor:pointer;
+		width:20px;
+		height:15px;
+		float:left;
+		margin:0 0 0 4px}
+		.iceslider_tabularslide ul.slidingbuttons li span {
+			display:none}
+		
+		.iceslider_tabularslide ul.slidingbuttons li.carouselslider_prev{ background:url(../images/iceslider_prev.png) no-repeat top}
+			.iceslider_tabularslide ul.slidingbuttons li.carouselslider_prev:hover{ background-position: bottom }
+		.iceslider_tabularslide ul.slidingbuttons li.carouselslider_next{ background:url(../images/iceslider_next.png) no-repeat top}
+			.iceslider_tabularslide ul.slidingbuttons li.carouselslider_next:hover{ background-position: bottom }
+		.iceslider_tabularslide ul.slidingbuttons li.carouselslider_stop{ background:url(../images/iceslider_stop.png) no-repeat top}
+			.iceslider_tabularslide ul.slidingbuttons li.carouselslider_stop:hover{ background-position: bottom }
+		.iceslider_tabularslide ul.slidingbuttons li.carouselslider_play{ background:url(../images/iceslider_play.png) no-repeat top}
+			.iceslider_tabularslide ul.slidingbuttons li.carouselslider_play:hover{ background-position: bottom }
+			
+			
+			
+			
+/* IceSlider CarouselSlide */
+.iceslider_carouselslide {
+	overflow:hidden;
+	clear:both;
+	position:relative;
+	margin:0 0 10px;}
+
+.iceslider_carouselslide_box {
+	position:absolute}	
+	
+.iceslider_carouselslide_content {
+	clear:both;
+	position:relative;
+	overflow:visible;
+	margin-top:20px;}
+		
+		
+		.iceslider_carouselslide_item{
+			margin:0;
+			float:left;}
+			
+			.iceslider_carouselslide_item .icemodule {
+				margin:0 9px 0 0;
+				position:relative;
+				overflow:visible;
+				background:url(../images/icemodule_br.png) no-repeat bottom right!important;} 
+				.iceslider_carouselslide_item .icemodule div{
+					background:url(../images/icemodule_bl.png) no-repeat bottom left!important;} 
+					.iceslider_carouselslide_item .icemodule div div{
+						background:url(../images/icemodule_tr.png) no-repeat top right!important;} 
+						.iceslider_carouselslide_item .icemodule div div div{
+							background:url(../images/icemodule_tl.png) no-repeat top left!important;} 
+								.iceslider_carouselslide_item .icemodule div div div div {
+									background:none!important;}
+				
+				.iceslider_carouselslide_item .icemodule div.icemodule_fix {
+					overflow:visible;
+					position:relative;
+					clear:both;
+					padding:9px 10px 9px;}
+					
+					.iceslider_carouselslide_item .icemodule div div div div { text-align:center} 
+					
+					.iceslider_carouselslide_item .icemodule h4 {
+						color:#444;
+						margin:-25px 0 5px;
+						position:relative;
+						overflow:hidden;
+						white-space: nowrap;
+						display:inline-block;
+						text-align:center;
+						font-size:1.2em;}
+							.iceslider_carouselslide_item .icemodule h4  a:hover{
+								background:#F1F1F1;
+								text-decoration:none;
+								color:#555}
+						
+						
+						
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_r,
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_l,
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_arrow { 
+							display:inline-block; height:43px; line-height:31px; }
+							
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_arrow { padding:0 12px;}
+						
+						
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_r { background:url(../images/icemodule_header_r.png) no-repeat center right;}
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_l { background:url(../images/icemodule_header_l.png) no-repeat center left;}
+						
+					
+						.iceslider_carouselslide_item .icemodule h4 span.icemodule_header_arrow { background:url(../images/icemodule_header_arrow.png) no-repeat center bottom;}
+						
+						
+						
+				
+				
+				.iceslider_carouselslide_content p { margin:0}
+				
+				.iceslider_carouselslide_content img {
+					margin:0 0 5px 5px; 
+					float:none;
+					clear:both;
+					border:1px solid #aaa; 
+					padding:1px; 
+					text-align:center}
+		
+
+	
+
+
+.iceslider_carouselslide .iceslider_carouselslide_buttons {
+	padding:5px 12px 10px 3px;
+	position:relative;
+	overflow:hidden}
+	
+	.iceslider_carouselslide .iceslider_carouselslide_buttons  h4 {
+		float:left;
+		line-height:1;
+		margin:0;
+		color:#777;
+		font-size:1.25em;}
+
+.iceslider_carouselslide ul.slidingbuttons {
+	margin:0;
+	float:right; }
+	.iceslider_carouselslide ul.slidingbuttons li{
+		list-style-type:none;
+		cursor:pointer;
+		width:20px;
+		height:15px;
+		float:left;
+		margin:0 0 0 4px}
+		.iceslider_carouselslide ul.slidingbuttons li span {
+			display:none}
+		
+		.iceslider_carouselslide ul.slidingbuttons li.carouselslider_prev{ background:url(../images/iceslider_prev.png) no-repeat top}
+			.iceslider_carouselslide ul.slidingbuttons li.carouselslider_prev:hover{ background-position: bottom }
+		.iceslider_carouselslide ul.slidingbuttons li.carouselslider_next{ background:url(../images/iceslider_next.png) no-repeat top}
+			.iceslider_carouselslide ul.slidingbuttons li.carouselslider_next:hover{ background-position: bottom }
+		.iceslider_carouselslide ul.slidingbuttons li.carouselslider_stop{ background:url(../images/iceslider_stop.png) no-repeat top}
+			.iceslider_carouselslide ul.slidingbuttons li.carouselslider_stop:hover{ background-position: bottom }
+		.iceslider_carouselslide ul.slidingbuttons li.carouselslider_play{ background:url(../images/iceslider_play.png) no-repeat top}
+			.iceslider_carouselslide ul.slidingbuttons li.carouselslider_play:hover{ background-position: bottom }
+
+	
+	
+/* This styles are when font-size is set to large */
+.font-large	.iceslider_carouselslide .iceslider_carouselslide_buttons  h4 { font-size:1.15em}
+
+
+
+
+/* IceScroller Module */
+.icescroller {
+	padding:0;
+	overflow:visible;}
+	.icescroller .hide {
+		visibility: hidden;
+		position: absolute;}
+	
+	.icescroller p {
+		float:left;
+		margin:0;
+		text-transform:uppercase;
+		color:#999}
+		
+	li.scrolleritem {
+			margin:0;}
+			li.scrolleritem{
+				list-style-type:none;}
+				 li.scrolleritem span { font-weight:bold;}
+			
+		
+	/* buttons */
+	ul.icescroller_buttons{
+	float:left;
+	margin:2px 5px 0 10px;
+	padding:0;
+	overflow:hidden;
+	position:relative;} 
+	ul.icescroller_buttons li {
+		list-style-type:none;
+		float:left;
+		margin:0;}	
+		ul.icescroller_buttons li a {
+			text-align:center;
+			width:15px;
+			height:15px;
+			margin-right:3px;
+			line-height:35px;
+			display:block;
+			border-bottom:none;}
+			ul.icescroller_buttons li a:hover { border-bottom:none}
+			
+			ul.icescroller_buttons li.prev  a{  background:url(../images/icescroller_prev.png) no-repeat top}
+			ul.icescroller_buttons li.next a{  background:url(../images/icescroller_next.png) no-repeat top}
+			
+				ul.icescroller_buttons li.prev  a:hover{  background-position: bottom}
+				ul.icescroller_buttons li.next a:hover{  background-position: bottom}
+		
+		

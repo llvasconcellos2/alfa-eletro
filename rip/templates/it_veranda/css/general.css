@@ -1,0 +1,948 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+/*===========================///////////////////-===========================
+					       General Layout Styles 
+===========================///////////////////-===========================*/
+	
+/* Accessibility */
+#accessibility {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	display:none;}
+
+/* Wrapping */
+.wrapper_full { width:100%;margin:0 auto;}
+	.wrapper  { width:970px; margin:0 auto;}
+
+	
+
+/* Set some default styles for Float, Width, Separator and TextAlight */
+.floatleft	{	float:left; overflow:hidden}
+.floatright {	float:right; overflow:hidden}
+
+.width16  { width: 14.9%; } /* Propotion 1/6 */
+.width20  { width: 18.3%; } /* Propotion 1/5 */
+.width25  { width: 23.4%;  } /* Propotion 1/4 */
+.width33  { width: 31.9%; } /* Propotion 1/3 */
+.width50  { width: 48.9%; } /* Propotion 1/2 */
+.width75  { width: 74.5%; } /* Propotion 3/4 */
+.width100 { width: 99%; } /* Propotion 1/1 */
+
+/* This are for User 1 - 3 and User 4 - 6  Modules*/
+.width1_user { width: 31.9%; } /* Propotion 1/3 */
+.width2_user { width: 48.9%; } /* Propotion 2/3 */
+.width3_user { width: 100%; } /* Propotion 3/3 */
+
+/* This are for Content 1 - 2 and Content 3 - 4  Modules*/
+.width1_content { width: 48.9%; } /* Propotion 1/1 */
+.width2_content { width: 100%; } /* Propotion 1/2 */
+
+
+.separator { margin-right:10px; }
+	#promo .separator,
+	#bottom .separator {background:url(../images/seperator.png) no-repeat center right; padding-right:9px; }
+
+.aligncenter { text-align:center;}
+.alignright  { text-align:right;}
+
+
+/*===========================///////////////////-===========================
+					               Header 
+===========================///////////////////-===========================*/
+
+/* Header */
+#header {
+	position:relative;
+	background-repeat:repeat-x;
+	background-position:top;
+	height:320px;}
+	
+	#header_shadow { background:url(../images/header_shadow.png) no-repeat top center;}
+		
+	#header .padding {  position:relative; overflow:visible}
+	
+
+/* Logo */
+#logo {
+	margin:10px 0 0;
+	float:left;}
+	#logo img {
+		float:none;
+		margin:0;}					
+
+
+/* Font Switcher */
+#fontswitcher {
+	background-position:center;
+	background-repeat:no-repeat;
+	margin:-2px 0 0;
+	padding:2px 0 0;
+	width:82px;
+	height:27px;
+	position:relative;
+	overflow:hidden;
+	float:right;}
+	
+#fontswitcher ul {
+	margin:0 0 0 14px;} 
+	#fontswitcher ul li {
+		list-style-type:none;
+		float:left;}	
+		#fontswitcher ul li a {
+			text-align:center;
+			width:18px;
+			height:35px;
+			margin-right:1px;
+			line-height:35px;
+			display:block;
+			border-bottom:none;
+			height:25px;}
+			#fontswitcher ul li a:hover { border-bottom:none}
+			#fontswitcher ul li.largefont  a{  background:url(../images/font_large.png) no-repeat top}
+			#fontswitcher ul li.normalfont a{  background:url(../images/font_normal.png) no-repeat top}
+			#fontswitcher ul li.smallfont  a{  background:url(../images/font_small.png) no-repeat top }	
+			
+				#fontswitcher ul li.largefont  a:hover{  background-position: bottom}
+				#fontswitcher ul li.normalfont a:hover{  background-position: bottom}
+				#fontswitcher ul li.smallfont  a:hover{  background-position: bottom }	
+	
+/*===========================///////////////////-===========================
+					               Promo
+===========================///////////////////-===========================*/
+#promo {
+	background:url(../images/content_divider_t.png) no-repeat bottom center;
+	padding-bottom:35px;
+	margin-bottom:-7px;}
+	#promo .padding { padding:5px 12px 0 10px;}
+	
+	
+/* Promo Modules */
+	#promo .moduletable {
+		margin:0 0 -5px;}
+			#promo .moduletable h3 {
+				margin:0 0 6px;
+				color:#222;
+				font-size:1.25em;}
+				#promo .moduletable h3 span { }
+	
+
+/*===========================///////////////////-===========================
+					              UserArea
+===========================///////////////////-===========================*/
+#userarea {
+	clear:both;}
+
+	#userarea .padding { 
+		margin:0;
+		padding:7px 10px 0;
+		border-bottom:1px dashed #d4d4d4;
+		position:relative;
+		overflow:hidden;}
+	
+	
+/*===========================///////////////////-===========================
+					               Content 
+===========================///////////////////-===========================*/
+#content_gradient {
+	background-repeat:repeat-x;
+	background-position:bottom center;}
+	
+#content_top {
+	background-repeat:no-repeat;
+	background-position:top center;
+	margin:0 auto;
+	height:500px;
+	position:relative;
+	overflow:visible;
+	margin-top:-270px;}
+
+#content_bottom {
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	margin:0 auto;
+	height:485px;}
+	
+#content_shadow { background:url(../images/content_shadow.png) repeat-y top center;	}
+	
+	
+#content { 
+	clear:both;
+	padding-top:15px;
+	position:relative;
+	overflow:visible;
+	margin-top:-490px;
+	margin-bottom:-390px;
+	min-height:500px;
+	z-index:111}
+
+
+/* Begin Columns (!!!!!Atention - because we have added some features for the template, some of the styles can be found on the index.php file of the template. If you want to change the code i dont normally reccomend you to do so for this section, try at your own risk. */	
+
+#columns-container{
+	background-color:#fff;
+	min-width: 50em;		/* limit how narrow the layout will
+							   shrink before it stops. */
+	margin:0 2px 0 0 }
+
+    #outer-column-container {
+		border-style:solid;
+		border-color:#fff;}
+		
+		#inner-column-container{
+			width: 100%;	/* force this element to take the full width
+							   between the left and right columns. this is
+							   especially important as children of this
+							   element will have width:100%; set, and how
+							   that 100% value is interpreted depends on
+							   the width of it's parent (this element). */
+			border-style:solid;
+			border-color:#fff;
+			outline-width:1px;
+			padding-bottom:20px;}
+									   
+			#source-order-container{
+				float: left;		/* float left so the right column, which is
+									   outside this element, has a place to go. */
+				width: 100%;		/* force this to go as wide as possible */
+				min-height:600px;}
+	
+
+	#middle-column{
+		float: right;		/* middle column goes right of the left column
+							   since the two share the same parent 
+							   element */
+		width: 100%;		/* make the middle column as wide as possible
+							   for a fluid layout. this is not possible
+							   if it's parent element, 
+							   #source-order-container, wasn't also at
+							   100% width */}			   
+	#left-column{
+		float: left;		/* float left, where it'll live */}
+		
+	#right-column{
+		float: right;		/* float on the right side of the layout */}
+		
+		.clear-columns { clear: both;}
+		
+		.inside { margin: 7px  9px -20px;	/* margin, instead of padding, used to induce margin collapse if needed by child elements */}
+		
+		#left-column .inside { margin-right:0}
+		#right-column .inside { margin-left:0}
+								
+/* Left Column and Right Column Module Decoration */
+#left-column .icemodule, 
+#right-column .icemodule{
+	margin:25px 0 15px;
+	position:relative;
+	overflow:visible;
+	background:url(../images/icemodule_br.png) no-repeat bottom right;} 
+	#left-column .icemodule div, 
+	#right-column .icemodule div{
+		background:url(../images/icemodule_bl.png) no-repeat bottom left;} 
+		#left-column .icemodule div div, 
+		#right-column .icemodule div div{
+			background:url(../images/icemodule_tr.png) no-repeat top right;} 
+			#left-column .icemodule div div div, 
+			#right-column .icemodule div div div{
+				background:url(../images/icemodule_tl.png) no-repeat top left;} 
+				#left-column .icemodule div div div div, 
+				#right-column .icemodule div div div div { background:none}
+				
+				#left-column .icemodule div.icemodule_fix, 
+				#right-column .icemodule div.icemodule_fix{
+					overflow:visible;
+					position:relative;
+					clear:both;
+					padding:9px 10px 9px;}
+					
+					#left-column .icemodule div div div div { text-align:center} 
+					
+					#left-column .icemodule h3, 
+					#right-column .icemodule h3 {
+						color:#444;
+						margin:-25px 0 0px 0;
+						position:relative;
+						overflow:hidden;
+						white-space: nowrap;
+						display:inline-block;
+						text-align:center;
+						font-size:1.2em;}
+						
+						#right-column .icemodule h3 { margin-left:-16px;}
+						
+						
+						#left-column .icemodule h3 span.icemodule_header_r,
+						#left-column .icemodule h3 span.icemodule_header_l,
+						#left-column .icemodule h3 span.icemodule_header_arrow,
+						#right-column .icemodule h3 span.icemodule_header_r,
+						#right-column .icemodule h3 span.icemodule_header_l,
+						#right-column .icemodule h3 span.icemodule_header_arrow{ 
+							display:inline-block; height:43px; line-height:31px; }
+							
+						#left-column .icemodule h3 span.icemodule_header_arrow,
+						#right-column .icemodule h3 span.icemodule_header_arrow { padding:0 12px;}
+						
+						
+						#left-column .icemodule h3 span.icemodule_header_r { background:url(../images/icemodule_header_r.png) no-repeat center right;}
+						#left-column .icemodule h3 span.icemodule_header_l { background:url(../images/icemodule_header_l.png) no-repeat center left;}
+						
+						#right-column .icemodule h3 span.icemodule_header_r { background:url(../images/icemodule_header_r.png) no-repeat center right;}
+						#right-column .icemodule h3 span.icemodule_header_l { background:url(../images/icemodule_header_l.png) no-repeat center left;}
+						
+						
+						#left-column .icemodule h3 span.icemodule_header_arrow,
+						#right-column .icemodule h3 span.icemodule_header_arrow { background:url(../images/icemodule_header_arrow.png) no-repeat center bottom;}
+						
+						
+						#left-column .icemodule h3 span.icemodule_header_color, 
+						#right-column .icemodule h3 span.icemodule_header_color {}
+							
+	
+	
+
+/* Module with suffix style1 */
+.icemodulestyle1 {
+		margin:-10px -9px 0;
+		position:relative;
+		overflow:visible;
+		background: url(../images/icemodule_style1_br.png) no-repeat bottom right;}
+		.icemodulestyle1 div {
+			background: url(../images/icemodule_style1_bl.png) no-repeat bottom left;}
+			.icemodulestyle1 div div {
+				background: url(../images/icemodule_style1_tr.png) no-repeat top right}
+				.icemodulestyle1 div div div  {
+					background: url(../images/icemodule_style1_tl.png) no-repeat top left}
+					.icemodulestyle1 div div div div {
+						background:none}
+					.icemodulestyle1 div.icemodule_fix {
+						background: none;
+						margin: 0;
+						padding:18px 19px 25px;
+						clear:both;
+						min-height:100px;
+						float: none;
+						overflow: hidden;}
+						.icemodulestyle1 h3 {
+							margin:3px 0 10px;
+							text-align:center;
+							color:#222;
+							padding:0;
+							font-style:italic;
+							font-size:1.25em;
+							font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;}
+							.icemodulestyle1 h3 span.icemodule_header_color { color:#777}
+
+
+/* Module with suffix style2 */
+.icemodulestyle2 {
+		background: url(../images/icemodule_style2_br.png) no-repeat bottom right;
+		min-height:50px;
+		position:relative;
+		margin:0 0 25px;
+		overflow:hidden;}
+		.icemodulestyle2 div {
+			background: url(../images/icemodule_style2_bl.png) no-repeat bottom left;}
+			.icemodulestyle2 div div {
+				background: url(../images/icemodule_tr.png) no-repeat top right}
+				.icemodulestyle2 div div div  {
+					background: url(../images/icemodule_tl.png) no-repeat top left}
+					.icemodulestyle2 div div div div  {
+						background: url(../images/icemodule_style2_arrow.png) no-repeat top center}
+						.icemodulestyle2 div div div div div { background:none}
+					
+					.icemodulestyle2 div.icemodule_fix {
+						background: none;
+						margin: 0;
+						padding:10px 10px 9px;
+						clear:both;
+						float: none;
+						overflow: hidden;}
+						.icemodulestyle2 h3 {
+							margin:3px 0 5px;
+							text-align:center;
+							color:#222;
+							font-size:1.2em;}
+							.icemodulestyle2 h3 span.icemodule_header_color { color:#777}
+
+
+
+/* Main Column Module */
+#usertopmods,
+#userbottommods {
+	position:relative; 
+	overflow:hidden;}
+
+#usertopmods { 
+	border-bottom:1px dashed #d1d1d1; 
+	padding-bottom:10px;
+	margin-bottom:10px}
+
+#userbottommods {  
+	border-top:1px dashed #d1d1d1; 
+	padding-top:10px; 
+	margin-top:10px}
+
+#contenttopmods,
+#contentbotmods { 
+	position:relative;
+	overflow:hidden;}
+
+#contenttopmods { margin-bottom:20px}
+
+#middle-column .icemodule {
+		border:none;
+		overflow:hidden;
+		background: url(../images/module_ice_br.png) no-repeat bottom right;}
+		#middle-column .icemodule div {
+			padding: 0;
+			background: url(../images/module_ice_bl.png) no-repeat bottom left;}
+			#middle-column .icemodule div div {
+				padding: 0;
+				background: url(../images/module_ice_tr.png) no-repeat top right;}
+				#middle-column .icemodule div div div{
+					background: url(../images/module_ice_tl.png) no-repeat top left;}
+					#middle-column .icemodule div div div div {
+						margin: 0;
+						padding: 10px;
+						overflow:visible;
+						background: none;}
+						#middle-column .icemodule div div div div div { padding:0;}
+						#middle-column .icemodule h3 {
+							color:#666;
+							margin:0 0 5px;
+							border-bottom:1px dashed #E6E6E6;
+							padding:4px 1px 5px;
+							font-size:1em;
+							font-weight:bold;}
+
+
+/*===========================///////////////////-===========================
+					              Bottom 
+===========================///////////////////-===========================*/
+
+#bottom {
+	background:url(../images/content_divider_b.png) no-repeat top center;
+	padding-top:40px;
+	margin-top:-5px;
+	position:relative;
+	overflow:hidden}
+	
+	#bottom .padding { padding:0 12px 18px 10px; position:relative; overflow:visible}
+	
+			
+	/* Bottom Modules */
+	#bottom .moduletable {
+		margin:0;} 
+			#bottom .moduletable h3 {
+				margin:0 0 6px;
+				color:#222;
+				font-size:1.25em;}
+				#bottom .moduletable h3 span { color:#888}
+				
+				#bottom .moduletable p { margin-bottom:0}
+
+
+/*===========================///////////////////-===========================
+					             Footer
+===========================///////////////////-===========================*/
+#footer {
+	color:#666;
+	margin-top:-85px;
+	z-index:9999;
+	position:relative;
+	overflow:hidden;}
+	
+	#footer p{
+		margin:0;
+		float:left} 
+	
+#footer p#icelogo {	margin:-3px 0 0 15px }
+	
+	
+#footer #gotop { position:relative;}
+
+#footer #gotop p {
+	position:absolute;
+	top:49px;
+	overflow:visible;
+	left:940px;
+	z-index:99999;
+	margin:0;}
+	#footer #gotop p a{
+		width:20px;
+		height:20px;
+		display:block;
+		background:url(../images/go_top.png) no-repeat top}
+		#footer #gotop p a:hover { background-position:bottom}
+		
+	#footer #gotop p span{ display:none}
+
+
+
+/*===========================///////////////////-===========================
+					      Default Joomla Component
+===========================///////////////////-===========================*/
+
+/* com_content 
+-------------------------------------------------------------------*/
+.blog_description { 
+	position:relative; 
+	overflow:hidden;
+	background:url(../images/articlerow_sep.jpg) no-repeat bottom center; padding-bottom:40px}
+
+.blog h1 { 
+	font-size:2.25em;
+	margin:0 0 .2em 0; }
+	
+.blog h2{
+    line-height:1.4;
+	margin:0 0 .1em 0; 
+	font-size:1.3em;
+	float:left;}
+	
+	.blog .leading h2{ font-size:1.8em}
+	
+	.blog .cols2 h2 { width:80%}
+	.blog .cols3 h2 { width:70%}
+	
+	
+	.blog h2 a:hover{
+		background:#F1F1F1;
+		text-decoration:none;
+		color:#555}
+
+	p.pageinfo {
+			margin:-12px 0 10px;
+			color:#999;
+			clear:both;
+			float:left;}
+			
+	p.iteminfo {
+			margin:0 0 10px;
+			clear:both;
+			float:left;
+			color:#999;}
+			
+			p.iteminfo span.modifydate { font-weight:bold; display:block; color:#666}
+			p.iteminfo span.createdby { padding-right:8px }
+			
+	p.buttonheading { float:right; margin:3px 0 0 0; }	
+		p.buttonheading img {  margin:0 0 0 5px; border:none; padding:none;}
+		.leading p.buttonheading { margin-top:8px; }	
+
+	
+	.blog .round {margin:10px 0 0}
+		.blog .article_column .round {margin:15px 0 -10px}
+			
+	
+	.blog img { /* The decoration for the images that are added on the articles */
+		float:left; 
+		border:1px solid #aaa; 
+		padding:1px; 
+		margin:0 10px 10px 0 }
+
+
+.articles_wrap { 
+	clear:both;
+	position:relative;
+	overflow:hidden;}
+
+	
+.article_row {
+	clear:both;
+	margin-top:5px;
+	position:relative;
+	overflow:hidden;}
+	
+	.article_row .cols2 { /* When you set up the category/section/frontpage intro articles to have 2 columns we divede it in 2 parts */
+		width:48.0%; 
+		float:left;}
+	.article_row .cols3 { /* and this when you set up in 3 parts */
+		width:31%; 
+		float:left;}
+	
+	.article_row .cols2 h2,
+	.article_row .cols3 h2 { 
+		font-size:1.25em;
+		margin-bottom:.15em; 
+		width:100%;}
+	
+	.article_row .column1 {}
+	.article_row .column2 {
+		background:url(../images/seperator_articles.png) no-repeat center left;
+		padding-left:10px; 
+		margin-left:9px; }	
+	.article_row .column3 { 
+		border-left:1px dotted #DBDBDB; 
+		padding-left:10px; 
+		margin-left:9px;}	
+			
+		
+.blogcontent { clear:both}
+
+
+/* The styles below are for the article layout page */
+#page { margin:10px 0 0 }
+	
+	#page h1.contentheading { 
+		font-size:2.25em; 
+		line-height:.75;
+		margin:0}
+
+	#page img { float:left; }
+
+
+p.noticebottom {
+	clear:both;
+	position:relative;
+	overflow:hidden;
+	margin:0 0 15px;
+	height:29px;
+	border-top:1px solid #E6E6E6;
+	text-align:center;
+	border-bottom:1px solid #E6E6E6;
+	line-height:30px;}
+
+
+#page div.buttons {
+	padding:0;
+	margin-bottom:15px;}
+	
+	div.buttons p.pageinfo {
+		float:left;
+		margin:0;}
+		
+	#page div.buttons p.iteminfo {
+		float:left;
+		margin:-16px 0 0;}
+		#page div.buttons p.iteminfo span.modifydate,
+		#page div.buttons p.iteminfo span.createdby { border-right:1px dotted #ccc; margin-right:12px; padding-right:10px;}
+		
+	
+	#page div.buttons p.buttonheading {
+		float:right;
+		margin:13px 0 0;}
+		#page div.buttons p.buttonheading img {
+			margin:0 0 0 7px;}
+	
+	
+	
+	
+.blog_more { /* For the links that are ander the intro articles listing */
+	position:relative; 
+	overflow:hidden;
+	margin-bottom:20px; 
+	padding-top:5px;
+	clear:both}
+
+.blog_more h2{ 
+	font-size:1.75em; 
+	margin:10px 0 5px}
+	
+	.blog_more ul {
+		margin:0;
+		clear:both;
+		width:100%;}
+		.blog_more ul li {
+			list-style-type:none;
+			float:left;
+			width:49%;
+			position:relative;
+			overflow:hidden} 
+			.blog_more ul li a {
+				float:left;
+				height:29px;
+				display:block;
+				white-space: nowrap;
+				overflow:hidden;
+				line-height:30px;
+				padding:0 10px;}
+
+
+/* This is for Archived Content List */
+p.archivedlist .inputbox { width:100px}
+
+
+
+div.pagination { /* Pagination styles */
+	border-top:1px solid #DBDBDB;
+	border-bottom:1px solid #DBDBDB;
+	padding:12px 12px;
+	clear:both;
+	position:relative;
+	overflow:hidden;
+	margin:0 -9px 15px;}
+
+div.pagination p.counter {
+	float:right;
+	margin:0;}
+
+div.pagination ul {
+	float:left;
+	margin:0;}
+	div.pagination ul li {
+		float:left;
+		list-style-type:none;
+		padding:0 7px;
+		border:1px solid #e9e9e9}
+		div.pagination ul li a {}
+			div.pagination ul li a:hover {
+				text-decoration:none;
+				color:#555}
+
+
+/* Read More Button */
+	.readmore a {
+		background:url(../images/readmore.png) no-repeat center left;
+		padding-left:23px;
+		padding-bottom:1px;
+		display:block;
+		margin:10px 0;
+		text-decoration:none;}
+		.readmore a:hover {
+			background:url(../images/readmore_hover.png) no-repeat center left;}
+
+
+
+/* com_search
+-------------------------------------------------------------------*/
+#searchpage .searchintro {
+	background:#F9F9F9;
+	padding:5px 15px 0;
+	position:relative;
+	overflow:hidden;
+	clear:both}
+#searchpage .searchintro p.left { float:left}
+#searchpage .searchintro p.right { float:right}	
+#searchpage ol p {	margin-bottom:1em}
+#searchpage ol span.discategory{ color:#999}
+
+ol.latestnews,
+ol.mostreadmod { margin-bottom:0  }
+
+ol.latestnews li,
+ol.mostreadmod  li { color:#808080;}
+
+
+/*===========================///////////////////-===========================
+					  Default Joomla Modules sytling
+===========================///////////////////-===========================*/
+
+/* mod_search
+-------------------------------------------------------------------*/
+#searcharea {
+	float:right;
+	margin:-2px -4px 10px 0;}
+
+#search_bg {
+	width:310px;
+	height:27px;
+	background-repeat: no-repeat; 
+	background-position:top center;}
+	
+	#search_bg form { margin:0 0 0 13px}
+	
+		#search_bg label { display:none; }
+		
+		#search_bg .inputbox {
+			width:225px;
+			margin:2px 0 0;
+			padding:2px 0 0;
+			background:none;
+			border:none;
+			color:#666;}
+			#search_bg .inputbox:focus	{color:#66797D}
+	
+		#search_bg .button{
+			float:none;
+			width:65px;
+			margin:0 0 0 4px;
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:1em;
+			height:24px;
+			cursor:pointer;
+			background:none;
+			display:inline;
+			border:none}
+			#search_bg .button:hover { color:#fff}
+	
+		
+/* mod_login
+-------------------------------------------------------------------*/	
+#loginarea {
+	background-repeat:no-repeat;
+	background-position:center;
+	float:right;
+	color:#777;
+	padding:25px 30px;
+	margin:-10px -15px 0 0;
+	width:340px;
+	height:55px;}	
+	
+form.loginform p#login_username label,
+form.loginform p#login_password label { display:none; }
+			
+form.loginform .inputbox {
+	padding:0;
+	display:inline;
+	background:none;
+	border:none;
+	width:90px;
+	color:#666;
+	margin:6px 0 0 35px;}
+	form.loginform p#login_username {
+		background:url(../images/login_username.png) no-repeat top; width:132px; height:27px; float:left; margin:0 7px 0 0;}
+	form.loginform p#login_password {
+		background:url(../images/login_password.png) no-repeat top; width:132px; height:27px; float:left; margin:0 4px 0 0;}
+		
+		form.loginform p#login_username:hover,
+		form.loginform p#login_password:hover { background-position:bottom;}
+	
+	
+	form.loginform p#login_button { margin:0}
+	form.loginform p#login_button .round { 
+		float:left;
+		color:#666;
+		height:25px;
+		line-height:25px;
+		padding-right:10px;}
+		form.loginform p#login_button .round span {
+			height:25px;
+			line-height:24px;
+			padding-left:10px;}
+		
+	form.loginform p#login_remember { 
+		clear:both; 
+		padding:10px 0 0;
+		margin:0;  
+		float:left;}
+		
+	
+	
+	/* button for the login area*/
+	#loginarea .round { 
+		float:left; 
+		margin:0 -3px 0 -2px; 
+		color:#777}
+	
+	form.loginform p.login_lost {
+		margin:12px 0 10px 10px;
+		padding-left:9px; float:left; 
+		border-left:1px solid #B2B2B2;}
+
+/* This styles are when font-size is set to large */
+.font-large form.loginform p#login_remember,
+.font-large form.loginform p.login_lost { font-size:.9em}
+			
+
+
+form.logout p {
+	margin:0 0 15px; }
+
+form.logout button{ 
+	margin: 0 0  0 10px}
+	
+	
+
+/* mod_latestnews and mod_mostread
+-------------------------------------------------------------------*/	
+ol.latestnews,
+ol.mostreadmod { margin-bottom:0  }
+
+ol.latestnews li,
+ol.mostreadmod  li { color:#808080;}
+
+	
+/* mod_breadcrumbsd
+-------------------------------------------------------------------*/	
+#breadcrumbs {
+	float:left;
+	font-size:1.1em;
+	padding-bottom:8px;}
+	
+	#breadcrumbs p {
+		display:inline;
+		float:left;
+		margin:0}
+		#breadcrumbs ol{
+			list-style-type:none;
+			float:left;
+			margin:0}
+			#breadcrumbs ol li { 
+				float:left;
+				background:url(../images/othermenu_arrow_parent.png) no-repeat right 65%; 	
+				padding:2px 22px 0 8px;}
+				#breadcrumbs ol li a {
+					display:block;
+					margin:0;}
+				#breadcrumbs ol li.last {
+					background:none;}
+				#breadcrumbs ol li.last span { 
+					margin:0 0 0 0}	
+
+
+/* mod_banner
+-------------------------------------------------------------------*/	
+#bannertop {
+	margin:3px 10px 0  25px;
+	float:left;}
+	
+#banner {
+	position:relative;
+	overflow:hidden;
+	margin:0 0 10px}
+	
+	#banner .padding { padding-left:10px}
+	
+	
+ul.bannermod {
+	margin:0;
+	float:left}
+	ul.bannermod li {
+		list-style-type:none;
+		margin:0;
+		display:inline;}	
+		ul.bannermod li img {
+			margin:0;
+			float:none}
+			
+
+/* mod_poll
+-------------------------------------------------------------------*/
+form.poll p.polltitle {
+	margin-bottom:8px; font-size:1.2em;} 
+form.poll p.pollradio {
+	color:#777}
+	
+
+/*===========================///////////////////-===========================
+				Some other styles that do not fit above
+===========================///////////////////-===========================*/
+/* Template Styles custom code */
+ul.tempstyle {
+	margin:0;
+	float:left}
+	ul.tempstyle li {
+		float:left;
+		list-style-type:none;}
+		ul.tempstyle li a {
+			margin:0 20px;
+			margin-bottom:4px;
+			display:block;
+			font-size:1.2em;}
+
+
+/* This styles are used on the Editor Page */
+form.editor select{ width:auto;}
+
+

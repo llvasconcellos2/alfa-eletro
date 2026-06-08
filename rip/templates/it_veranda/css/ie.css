@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+/* menus.css */
+
+							
+*html .smOW{ width:190px }
+
+*html #main-nav { background-image:none; border-left:1px solid #AA7154}
+*html ul#nav li { background-image:none; border-right:1px solid #AA7154}
+*html ul#nav  li#current a span,
+*html ul#nav  li.active a span { background-image:none!important}
+*html #MainMenuSub li.parent a { background-image:none!important}
+*html ul#nav ul, 
+*html #MainMenuSub ul {background-image:none!important}
+
+/* general.css */
+#header { position:static;}
+	
+#content_shadow { zoom:1;}
+	
+#middle-column .icemodule,
+#middle-column .icemodule div,
+#middle-column .icemodule div div,
+
+.icemodulestyle1,
+.icemodulestyle1 div,
+.icemodulestyle1 div div,
+
+.icemodulestyle2,
+.icemodulestyle2 div,
+ .icemodulestyle2 div div,
+
+#left-column .icemodule div, 
+#right-column .icemodule div,
+#left-column .icemodule div div, 
+#right-column .icemodule div div,
+
+.iceslider_carouselslide_item .icemodule,
+.iceslider_carouselslide_item .icemodule div { zoom:1;}
+	
+*html #right-column .icemodule h3 span.icemodule_header_r,
+*html #right-column .icemodule h3 span.icemodule_header_l,
+*html #right-column .icemodule h3 span.icemodule_header_arrow{ 
+	display:inline-block; float:left;  }
+							
+*html  #left-column .icemodule, 
+*html  #right-column .icemodule { float:left; clear:both; width:100%;}
+	
+	
+form.loginform .inputbox { margin-top:4px}
+form.loginform p#login_remember { width:105px;}
+
+#search_bg .inputbox { margin-bottom:4px}
+
+
+
+*html #footer #gotop { position:static}
+*html #footer #gotop p {left:915px; }
+
+	
+#page div.buttons p.iteminfo {margin-top:5px;}
+#page div.buttons p.buttonheading { margin-top:5px}
+
+
+p.iteminfo { width:100%; }
+			
+			
+/* icemodules.css */
+*html .iceslider_carouselslide .iceslider_carouselslide_buttons { margin-bottom:25px }
+*html .iceslider_tabularslide ul.slidingul li.active { margin-bottom:-25px;

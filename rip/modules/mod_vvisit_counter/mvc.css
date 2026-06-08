@@ -1,0 +1,82 @@
+/*
+
+Simple Style Example mod_vvisit_counter by Michael Majunke
+
+$Data$
+$Revision: 17 $
+$Author: mmicha $
+@copyright Copyright (C) 2009 Majunke Michael majunke@mmajunke.de
+
+*/
+
+div.mvc_main {
+ border: 1px solid #D4D5AA;
+ text-align: center;
+ width: 95%;
+}
+
+div.mvc_pre{
+    background: #ffc;
+	font-size: 100%;
+	font-weight: bold;
+	margin:  2px;
+	padding: 2px;
+}
+
+div.mvc_post{
+    background: #ffc;
+	font-size: 100%;
+	font-weight: bold;
+	margin:  2px;
+	padding: 2px;
+}
+
+div.mvc_ip{
+}
+
+span.vcounter_TypeTextIP{
+}
+
+img.mvc_digitIPImg{
+}
+
+div.mvc_ipcountrycode{
+}
+
+div.mvc_ipcountry{
+}
+
+div.mvc_ipflag{
+}
+
+img.mvc_ipflagimg{
+}
+
+div.mvc_digitCounter {
+ margin:  2px;
+ padding: 2px;
+ text-align: center;
+}
+
+img.mvc_digitCounterImg {
+}
+
+span.vcounter_TypeText {
+}
+
+div.mvc_people{
+}
+
+table.mvc_peopleTable{
+}
+
+img.mvc_peopleImg{
+}
+
+div.mvc_stat {
+ text-align: center;
+ padding: 5px ;
+}
+
+img.mvc_statImg{
+}

@@ -1,0 +1,161 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+/* General Forsm Styles */
+
+label { 
+	font-weight: normal}
+
+fieldset { 
+	padding:1.4em; 
+	margin: 1em 0 1.5em 0; 
+	border: 1px solid #E6E6E6;}
+	
+legend  { 
+	font-size:1.5em;
+	background:#fff;
+	color:#777;
+	border:1px solid #E6E6E6;
+	padding:0.2em 1em}
+
+/* Text fields */
+.inputbox {
+	/* width:250px; */
+	width:94%;
+	margin:0 0.25em 0 0;
+	border: 1px solid #E6E6E6;
+	color: #555;
+	line-height:18px;
+	padding:3px 5px;}
+	.inputbox:hover,
+	.inputbox:focus { background:#fff; border-color:#ccc;}
+	.inputbox:focus	{color:#333;}
+	
+textarea { 
+	width: 90%; 
+	height: 200px; 
+	border: 1px solid #E6E6E6;
+	color: #999;
+	padding:5px 8px;
+	margin:0.5em 0.5em 0.5em 0;
+	overflow:hidden; }
+	textarea:hover,
+	textarea:focus { background:#F9F9F9;}
+	textarea:focus {color:#333}
+
+
+select { 
+	border:1px solid #E6E6E6;
+	color: #999;
+	padding:2px 2px 2px 4px!important;
+	outline:none;}
+	select:focus { 
+		background:#fff}
+
+/* Other */
+form p img {
+	float:none;
+	margin:0;
+	vertical-align:middle}
+
+
+/* Success, Notice and Error Form Messages */
+.success,
+.notice,
+.error { 
+	padding:5px 10px 5px 40px;
+	margin-bottom: 1.5em;}
+	.success { 
+		border:1px solid #C6D880;
+		color: #264409;
+		background:#E6EFC2 url(../images/typo_success.jpg) no-repeat 10px center}
+	.notice { 
+		border:1px solid #FFD324;
+		color: #514721;
+		background:#FFF6BF url(../images/typo_note.jpg) no-repeat 10px center }
+	.error { 
+		border:1px solid #FBC2C4;
+		color: #8A1F11;
+		background:#FBE3E4 url(../images/typo_error.jpg) no-repeat 10px center}
+
+	
+/* Buttons 
+-------------------------------------------------------------- */
+p.buttonarea {
+	border:1px solid #e9e9e9;
+	margin:0 0 2em 0;
+	padding:15px;}
+
+.round {
+	background-repeat:no-repeat;
+	background-position:right top;
+	cursor:pointer; 
+	color:#DDBAA8;
+	font-family:Verdana, Geneva, sans-serif;
+	cursor:pointer; 
+	height:29px;
+	line-height:28px;
+	padding-right:15px; 
+	vertical-align:middle;
+	display:block; /*opera*/
+	display:inline-block; /*ie*/
+	display:-moz-inline-box;  /*ff*/}
+	
+	.round a { color:#DDBAA8; text-decoration:none}
+		.round a:hover { color:#fff;}
+
+.round span {
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin-left:-2px;
+	height:29px;
+	display:block;
+	display:inline-block;
+	padding-left:15px; 
+	line-height:28px;}
+	
+	
+	/*button tag*/	
+	button {
+		border:0; 
+		border:none;
+		font-family:Verdana, Geneva, sans-serif;
+		background:transparent;
+		width:1; 
+		overflow:visible;
+		white-space:nowrap; 
+		padding:0 2px; 
+		cursor:pointer; 
+		cursor:hand;}
+	
+	button:hover .round {background-position:right bottom; color:#fff }
+	button:hover .round span {background-position:left bottom;}
+	
+.button {
+	padding: 3px 5px;
+	border: 1px solid #333333;
+	background: url(../../ja_purity/images/grad1.gif) repeat-x top #333333;
+	color: #CCCCCC;
+	font-size: 85%;
+	text-transform: uppercase;
+	color:#FFFFFF !important;
+}
+	
+	
+	
+	.round:hover {background-position:right bottom;}
+	.round:hover span {background-position:left bottom;}
+	
+
+	.round:visited{ color:#777}
+
+
+
