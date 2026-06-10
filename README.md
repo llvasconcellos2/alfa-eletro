@@ -17,9 +17,7 @@
   <br />
 
 <a href="https://leonardo-vasconcellos.vercel.app/portfolio/alfa-eletro"
-    ><strong>View it live »</strong></a
-
->
+    ><strong>View it live »</strong></a>
 
 </div>
 
